@@ -1,0 +1,878 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.center {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+body {
+  background-color: #070707;
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  background-color: #070707;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu {
+  height: 100px;
+  width: 700px;
+}
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu li {
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+}
+
+.menu a {
+  color: #F19FBF;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Gugi", cursive;
+  line-height: 100px;
+}
+
+.menu a:hover {
+  background-color: #F19FBF;
+  color: #070707;
+}
+
+svg path {
+  fill: #F19FBF;
+}
+
+.logo {
+  font-size: 25px;
+  padding-top: 10px;
+  padding-left: 30px;
+  width: 300px;
+}
+
+.logo h3 {
+  color: #F19FBF;
+  font-family: "Pacifico", cursive;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  margin-top: 15px;
+}
+
+.mainTitle {
+  color: #F19FBF;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 50px;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  margin-top: 15px;
+  padding-top: 50px;
+}
+
+.search {
+  background-image: url("../img/5139493db68077463014ef9382820a92.jpg");
+  background-position: center;
+  background-size: contain;
+}
+
+form {
+  text-align: center;
+  height: 20vh;
+  line-height: 20vh;
+}
+
+form label {
+  font-family: "Gugi", cursive;
+  display: block;
+  color: #F19FBF;
+}
+
+form input {
+  margin-left: 15px;
+  height: 50px;
+  width: 30vw;
+  border-radius: 10px;
+  font-size: 20px;
+  padding-left: 15px;
+  border: 2px solid black;
+  margin-right: 40px;
+}
+
+form select {
+  height: 50px;
+}
+
+form button {
+  height: 50px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  width: 100px;
+}
+
+.search {
+  padding-top: 55px;
+}
+
+.search .logo {
+  width: 250px;
+  height: 250px;
+  background-image: url("../img/neon-cocktails-sign-by-Vexels.png");
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.drinksResult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.drinksResult .drink {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #070707;
+  width: 450px;
+  margin: 20px 20px;
+}
+
+.drinksResult .drink h3 {
+  font-family: "Gugi", cursive;
+  color: #F19FBF;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.drinksResult .drink h3 span {
+  font-size: 12px;
+}
+
+.drinksResult .drink .fotoIng {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 200px;
+}
+
+.drinksResult .drink img {
+  width: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.drinksResult .drink ul {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.drinksResult .drink ul span {
+  color: #9AD7F8;
+  margin-bottom: 10px;
+  width: 160px;
+}
+
+.drinksResult .drink ul li {
+  list-style: none;
+}
+
+.drinksResult .drink span {
+  color: #9AD7F8;
+}
+
+.drinksResult .drink p {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.empty {
+  height: 10vh;
+}
+
+.searchButton {
+  background-color: #fff;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 2px solid #000;
+  font-weight: 700;
+}
+
+select {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  background-color: #fff;
+  border-left: 2px solid #000;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.error.center {
+  color: #fff;
+  background-color: #070707;
+  width: 400px;
+  height: 60px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  border: 2px solid white;
+  display: none;
+}
+
+.coneser {
+  background-image: url("../img/5139493db68077463014ef9382820a92.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+.coneser .logo {
+  width: 250px;
+  height: 250px;
+  background-image: url("../img/neon-cocktails-sign-by-Vexels.png");
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.coneser .gameOver {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+
+.coneser .gameOver button {
+  width: 150px;
+  border-radius: 10px;
+  height: 30px;
+  font-weight: 700;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #F19FBF;
+  border: 2px solid #F19FBF;
+  background-color: #070707;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20vh;
+}
+
+.header .instructions p {
+  width: 250px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.header .instructions p span {
+  color: #F19FBF;
+}
+
+.header .score p {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.header .score span {
+  color: #F19FBF;
+}
+
+.header .instructions {
+  width: 200px;
+  color: #fff;
+}
+
+.coneserQuestion {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.coneserQuestion ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.coneserQuestion li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #070707;
+  border: 2px solid #9AD7F8;
+  padding: 30px;
+  border-radius: 10px;
+  font-family: "Gugi", cursive;
+  color: #9AD7F8;
+  list-style: none;
+  margin: 20px 30px;
+}
+
+.coneserQuestion li img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 70px;
+}
+
+.coneserQuestion li p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.coneserAnswers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.coneserAnswers .checked {
+  background-color: #9AD7F8;
+  color: #070707;
+  border-color: #070707;
+}
+
+.coneserAnswers .wrong {
+  background-color: #F19FBF;
+}
+
+.coneserAnswers ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.coneserAnswers ul h2 {
+  color: #9AD7F8;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: "Gugi", cursive;
+}
+
+.coneserAnswers li {
+  list-style: none;
+  color: #9AD7F8;
+  font-weight: 700;
+  width: 150px;
+  border-radius: 10px;
+  border: 2px solid #9AD7F8;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #070707;
+}
+
+.coneserAnswers li:hover {
+  background-color: #9AD7F8;
+  color: #070707;
+  cursor: pointer;
+}
+
+.coneserAnswers li p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.buttons {
+  margin: 30px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.buttons button {
+  height: 35px;
+  width: 150px;
+  border-radius: 10px;
+  color: #F19FBF;
+  background-color: #070707;
+  border: 2px solid #F19FBF;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 15px;
+}
+
+.buttons button:hover {
+  color: #070707;
+  background-color: #F19FBF;
+}
+
+.barman {
+  background-image: url("../img/5139493db68077463014ef9382820a92.jpg");
+  background-position: center;
+  background-size: contain;
+}
+
+.barman h2 {
+  color: #9AD7F8;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 15px;
+  font-family: "Gugi", cursive;
+  font-size: 30px;
+}
+
+.barman p {
+  color: #fff;
+}
+
+.gameBoard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gameBoard .titleDrink {
+  background-color: #070707;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.gameBoard #dr2 {
+  margin: 0 20px;
+}
+
+.svg {
+  width: 400px;
+  height: 450px;
+  margin-top: 15px;
+  background-image: url("../img/shaker.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.svg .imgDrink {
+  width: 400px;
+}
+
+.svg .draggable.ingredient {
+  width: 60px;
+  height: 80px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  width: 60px;
+  height: 80px;
+}
+
+.svg .draggable.ingredient img {
+  width: 50px;
+  height: 50px;
+}
+
+.svg .draggable.ingredient p {
+  display: none;
+}
+
+.mainBoard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+}
+
+.mainBoard p {
+  width: 20vw;
+  font-size: 18px;
+}
+
+.mainBoard p span {
+  color: #F19FBF;
+}
+
+.allIngredients {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ingredient {
+  width: 95px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #9AD7F8;
+  border-radius: 5px;
+}
+
+.ingredient:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.ingredient img {
+  width: 70px;
+  height: 70px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.ingredient p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.score span {
+  color: #F19FBF;
+}
+
+.score p {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.scoreButton {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.scoreButton button {
+  height: 30px;
+  width: 150px;
+  border-radius: 10px;
+  color: #F19FBF;
+  background-color: #070707;
+  border: 2px solid #F19FBF;
+  font-weight: 700;
+}
+
+.imgDrink {
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+.gameOver {
+  border: 2px solid #fff;
+  border-radius: 10px;
+  width: 500px;
+  text-align: center;
+  margin: 40px auto;
+  background-color: #070707;
+  margin-bottom: 100px;
+}
+
+.gameOver h1 {
+  color: #F19FBF;
+  font-family: "Gugi", cursive;
+  margin: 20px 0;
+}
+
+.gameOver p {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.gameOver p span {
+  color: #F19FBF;
+}
+
+.gameOver button {
+  margin: 20px 20px;
+  width: 150px;
+  border-radius: 10px;
+  height: 30px;
+  font-weight: 700;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #F19FBF;
+  border: 2px solid #F19FBF;
+  background-color: #070707;
+}
+
+.footer {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer .logo {
+  font-size: 14px;
+}
+
+.footer .logo h3 {
+  margin-top: -5px;
+}
+
+.footer p {
+  font-size: 10px;
+}
+
+.footer p span {
+  color: #F19FBF;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p.hol {
+  width: 100%;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 15px auto 10px auto;
+  text-align: center;
+}
+
+p.hol a {
+  color: #F19FBF;
+  text-decoration: none;
+}
+
+.prohibition {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 5px solid red;
+  background-color: #fff;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+}
+
+.prohibition::after {
+  content: '';
+  width: 5px;
+  height: 60px;
+  border: 5px soli red;
+  position: relative;
+}
+
+.infoProhibitions {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.prohibitions {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.prohibitions div {
+  font-size: 8px;
+  text-align: center;
+}
+
+.prohibitions div:first-of-type {
+  font-size: 20px;
+}
+
+.sorry {
+  background-image: url("../img/5139493db68077463014ef9382820a92.jpg");
+  color: #F19FBF;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sorry h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.sorry .logo {
+  width: 250px;
+  height: 250px;
+  background-image: url("../img/neon-cocktails-sign-by-Vexels.png");
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.question {
+  height: 80vh;
+  background-image: url("../img/5139493db68077463014ef9382820a92.jpg");
+}
+
+.question .yearQuestion {
+  width: 150px;
+}
+
+.question button {
+  border-radius: 10px;
+  border: 2px solid #F19FBF;
+  background-color: #070707;
+  color: #F19FBF;
+  font-weight: 700;
+  font-size: 18px;
+  width: 80px;
+}
+
+.question button:hover {
+  background-color: #F19FBF;
+  color: #070707;
+}
+
+.question .logo {
+  width: 250px;
+  height: 250px;
+  background-image: url("../img/neon-cocktails-sign-by-Vexels.png");
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=main.css.map */
