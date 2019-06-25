@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/fun-with-drinks-2/static/css/main.fb015949.chunk.css",
-    "main.js": "/fun-with-drinks-2/static/js/main.c078a5a0.chunk.js",
-    "main.js.map": "/fun-with-drinks-2/static/js/main.c078a5a0.chunk.js.map",
+    "main.css": "/fun-with-drinks-2/static/css/main.c15caff1.chunk.css",
+    "main.js": "/fun-with-drinks-2/static/js/main.9c306a1c.chunk.js",
+    "main.js.map": "/fun-with-drinks-2/static/js/main.9c306a1c.chunk.js.map",
     "runtime~main.js": "/fun-with-drinks-2/static/js/runtime~main.1b723a9f.js",
     "runtime~main.js.map": "/fun-with-drinks-2/static/js/runtime~main.1b723a9f.js.map",
     "static/js/2.cb56ed7a.chunk.js": "/fun-with-drinks-2/static/js/2.cb56ed7a.chunk.js",
     "static/js/2.cb56ed7a.chunk.js.map": "/fun-with-drinks-2/static/js/2.cb56ed7a.chunk.js.map",
     "index.html": "/fun-with-drinks-2/index.html",
-    "precache-manifest.a252410f6f70bbb0bef3d55aa86f350f.js": "/fun-with-drinks-2/precache-manifest.a252410f6f70bbb0bef3d55aa86f350f.js",
+    "precache-manifest.0049c832878b8f4d523bdd26f2a9eacd.js": "/fun-with-drinks-2/precache-manifest.0049c832878b8f4d523bdd26f2a9eacd.js",
     "service-worker.js": "/fun-with-drinks-2/service-worker.js",
-    "static/css/main.fb015949.chunk.css.map": "/fun-with-drinks-2/static/css/main.fb015949.chunk.css.map",
+    "static/css/main.c15caff1.chunk.css.map": "/fun-with-drinks-2/static/css/main.c15caff1.chunk.css.map",
     "static/media/main.scss": "/fun-with-drinks-2/static/media/shaker.d6bc00d2.svg"
   }
 }

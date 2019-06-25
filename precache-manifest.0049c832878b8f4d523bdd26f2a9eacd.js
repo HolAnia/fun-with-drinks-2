@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0fa86e8f545935b329edc5b24ab3677b",
+    "revision": "d68c548b9795b3861ee149f957bd24f8",
     "url": "/fun-with-drinks-2/index.html"
   },
   {
-    "revision": "788a7362d2593a0c903c",
-    "url": "/fun-with-drinks-2/static/css/main.fb015949.chunk.css"
+    "revision": "093d5fe8b4dfc253198f",
+    "url": "/fun-with-drinks-2/static/css/main.c15caff1.chunk.css"
   },
   {
     "revision": "f54a6ff2614fa4f02d57",
     "url": "/fun-with-drinks-2/static/js/2.cb56ed7a.chunk.js"
   },
   {
-    "revision": "788a7362d2593a0c903c",
-    "url": "/fun-with-drinks-2/static/js/main.c078a5a0.chunk.js"
+    "revision": "093d5fe8b4dfc253198f",
+    "url": "/fun-with-drinks-2/static/js/main.9c306a1c.chunk.js"
   },
   {
     "revision": "a955ec52cf3f84c715c5",
